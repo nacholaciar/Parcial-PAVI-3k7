@@ -30,6 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNroNuevoEquipo = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.cmbCategorias = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtNombreDeEquipo = new System.Windows.Forms.TextBox();
@@ -37,7 +39,7 @@
             this.txtFecha = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregarJugador = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvEquipos = new System.Windows.Forms.DataGridView();
             this.NroJugador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreJugador = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NroPosicion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,16 +48,14 @@
             this.btnBuscarJugador = new System.Windows.Forms.Button();
             this.cmbPosicion = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNombreJugador = new System.Windows.Forms.TextBox();
             this.txtNroJugador = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtNroNuevoEquipo = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.btnAgregarJugador.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEquipos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -87,8 +87,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos generales";
             // 
+            // txtNroNuevoEquipo
+            // 
+            this.txtNroNuevoEquipo.Location = new System.Drawing.Point(125, 28);
+            this.txtNroNuevoEquipo.Name = "txtNroNuevoEquipo";
+            this.txtNroNuevoEquipo.Size = new System.Drawing.Size(73, 20);
+            this.txtNroNuevoEquipo.TabIndex = 14;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(112, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Nro nuevo equipo:";
+            // 
             // cmbCategorias
             // 
+            this.cmbCategorias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategorias.FormattingEnabled = true;
             this.cmbCategorias.Location = new System.Drawing.Point(458, 64);
             this.cmbCategorias.Name = "cmbCategorias";
@@ -138,13 +155,13 @@
             // 
             // btnAgregarJugador
             // 
-            this.btnAgregarJugador.Controls.Add(this.dataGridView1);
+            this.btnAgregarJugador.Controls.Add(this.dgvEquipos);
             this.btnAgregarJugador.Controls.Add(this.label8);
             this.btnAgregarJugador.Controls.Add(this.button1);
             this.btnAgregarJugador.Controls.Add(this.btnBuscarJugador);
             this.btnAgregarJugador.Controls.Add(this.cmbPosicion);
             this.btnAgregarJugador.Controls.Add(this.label7);
-            this.btnAgregarJugador.Controls.Add(this.textBox1);
+            this.btnAgregarJugador.Controls.Add(this.tbNombreJugador);
             this.btnAgregarJugador.Controls.Add(this.txtNroJugador);
             this.btnAgregarJugador.Controls.Add(this.label6);
             this.btnAgregarJugador.Controls.Add(this.label5);
@@ -156,17 +173,19 @@
             this.btnAgregarJugador.TabStop = false;
             this.btnAgregarJugador.Text = "Jugadores del equipo";
             // 
-            // dataGridView1
+            // dgvEquipos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvEquipos.AllowUserToAddRows = false;
+            this.dgvEquipos.AllowUserToDeleteRows = false;
+            this.dgvEquipos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEquipos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NroJugador,
             this.NombreJugador,
             this.NroPosicion});
-            this.dataGridView1.Location = new System.Drawing.Point(9, 141);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(570, 193);
-            this.dataGridView1.TabIndex = 13;
+            this.dgvEquipos.Location = new System.Drawing.Point(9, 141);
+            this.dgvEquipos.Name = "dgvEquipos";
+            this.dgvEquipos.Size = new System.Drawing.Size(570, 193);
+            this.dgvEquipos.TabIndex = 13;
             // 
             // NroJugador
             // 
@@ -204,6 +223,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Agregar jugador";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnBuscarJugador
             // 
@@ -213,9 +233,11 @@
             this.btnBuscarJugador.TabIndex = 10;
             this.btnBuscarJugador.Text = "Buscar";
             this.btnBuscarJugador.UseVisualStyleBackColor = true;
+            this.btnBuscarJugador.Click += new System.EventHandler(this.btnBuscarJugador_Click);
             // 
             // cmbPosicion
             // 
+            this.cmbPosicion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPosicion.FormattingEnabled = true;
             this.cmbPosicion.Location = new System.Drawing.Point(336, 69);
             this.cmbPosicion.Name = "cmbPosicion";
@@ -231,12 +253,12 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Posicion:";
             // 
-            // textBox1
+            // tbNombreJugador
             // 
-            this.textBox1.Location = new System.Drawing.Point(167, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
+            this.tbNombreJugador.Location = new System.Drawing.Point(167, 69);
+            this.tbNombreJugador.Name = "tbNombreJugador";
+            this.tbNombreJugador.Size = new System.Drawing.Size(100, 20);
+            this.tbNombreJugador.TabIndex = 7;
             // 
             // txtNroJugador
             // 
@@ -272,22 +294,7 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "Confirmar equipo";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 31);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(112, 13);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Nro nuevo equipo:";
-            // 
-            // txtNroNuevoEquipo
-            // 
-            this.txtNroNuevoEquipo.Location = new System.Drawing.Point(125, 28);
-            this.txtNroNuevoEquipo.Name = "txtNroNuevoEquipo";
-            this.txtNroNuevoEquipo.Size = new System.Drawing.Size(73, 20);
-            this.txtNroNuevoEquipo.TabIndex = 14;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // AltaEquipo
             // 
@@ -299,12 +306,14 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "AltaEquipo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AltaEquipo";
+            this.Load += new System.EventHandler(this.AltaEquipo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.btnAgregarJugador.ResumeLayout(false);
             this.btnAgregarJugador.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEquipos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,13 +330,13 @@
         private System.Windows.Forms.MaskedTextBox txtFecha;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox btnAgregarJugador;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvEquipos;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnBuscarJugador;
         private System.Windows.Forms.ComboBox cmbPosicion;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNombreJugador;
         private System.Windows.Forms.TextBox txtNroJugador;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

@@ -9,3 +9,22 @@ C:\Users\Estudio-PC\OneDrive\NICO\UTN\PAV 1\2019\Parcial\Ejercicio Parcial\Parci
 C:\Users\Estudio-PC\OneDrive\NICO\UTN\PAV 1\2019\Parcial\Ejercicio Parcial\ParcialPav3k7_2019\ParcialPav\ParcialPav\obj\Debug\ParcialPav.csproj.CoreCompileInputs.cache
 C:\Users\Estudio-PC\OneDrive\NICO\UTN\PAV 1\2019\Parcial\Ejercicio Parcial\ParcialPav3k7_2019\ParcialPav\ParcialPav\obj\Debug\ParcialPav.exe
 C:\Users\Estudio-PC\OneDrive\NICO\UTN\PAV 1\2019\Parcial\Ejercicio Parcial\ParcialPav3k7_2019\ParcialPav\ParcialPav\obj\Debug\ParcialPav.pdb
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\bin\Debug\ParcialPav.exe.config
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\bin\Debug\ParcialPav.exe
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\bin\Debug\ParcialPav.pdb
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\obj\Debug\ParcialPav.csprojAssemblyReference.cache
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\obj\Debug\ParcialPav.AltaEquipo.resources
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\obj\Debug\ParcialPav.Principal.resources
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\obj\Debug\ParcialPav.Properties.Resources.resources
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\obj\Debug\ParcialPav.csproj.GenerateResource.cache
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\obj\Debug\ParcialPav.csproj.CoreCompileInputs.cache
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\obj\Debug\ParcialPav.exe
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\obj\Debug\ParcialPav.pdb
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\obj\Debug\ParcialPav.csproj.CopyComplete
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\obj\Debug\RdlCompile.cache
+C:\Users\suco\Documents\GitHub\parcial-pav-i---2021-71348-Laciar-Ignacio\ParcialPav\ParcialPav\obj\Debug\RdlCompile.compiled
